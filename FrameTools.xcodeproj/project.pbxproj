@@ -78,6 +78,7 @@
 		3A17CC541D6C584D00406A0B /* YiRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17CC471D6C584D00406A0B /* YiRefreshFooter.m */; };
 		3A17CC551D6C584D00406A0B /* YiRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17CC491D6C584D00406A0B /* YiRefreshHeader.m */; };
 		3A17CC561D6C584D00406A0B /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17CC4C1D6C584D00406A0B /* SIOSocket.m */; };
+		3AB96AD61D6C5EB3004AF6B4 /* VHHorSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB96AD51D6C5EB3004AF6B4 /* VHHorSegmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +225,8 @@
 		3A17CC4B1D6C584D00406A0B /* SIOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOSocket.h; sourceTree = "<group>"; };
 		3A17CC4C1D6C584D00406A0B /* SIOSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOSocket.m; sourceTree = "<group>"; };
 		3A17CC4D1D6C584D00406A0B /* socket.io.js.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.io.js.h; sourceTree = "<group>"; };
+		3AB96AD41D6C5EB3004AF6B4 /* FrameTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameTools-Bridging-Header.h"; sourceTree = "<group>"; };
+		3AB96AD51D6C5EB3004AF6B4 /* VHHorSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHHorSegmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +269,7 @@
 		3A0E6CC11D5357B70044CDAE /* FrameTools */ = {
 			isa = PBXGroup;
 			children = (
+				3AB96AD51D6C5EB3004AF6B4 /* VHHorSegmentView.swift */,
 				3A0E6CC51D5357B70044CDAE /* AppDelegate.h */,
 				3A0E6CC61D5357B70044CDAE /* AppDelegate.m */,
 				3A0E6CC81D5357B70044CDAE /* ViewController.h */,
@@ -275,6 +279,7 @@
 				3A0E6CD01D5357B70044CDAE /* LaunchScreen.storyboard */,
 				3A0E6CD31D5357B70044CDAE /* Info.plist */,
 				3A0E6CC21D5357B70044CDAE /* Supporting Files */,
+				3AB96AD41D6C5EB3004AF6B4 /* FrameTools-Bridging-Header.h */,
 			);
 			path = FrameTools;
 			sourceTree = "<group>";
@@ -759,6 +764,7 @@
 			files = (
 				3A0E6CCA1D5357B70044CDAE /* ViewController.m in Sources */,
 				3A0E6CC71D5357B70044CDAE /* AppDelegate.m in Sources */,
+				3AB96AD61D6C5EB3004AF6B4 /* VHHorSegmentView.swift in Sources */,
 				3A0E6CC41D5357B70044CDAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -944,10 +950,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FrameTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vhall.com.FrameTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FrameTools/FrameTools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -955,10 +964,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FrameTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vhall.com.FrameTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FrameTools/FrameTools-Bridging-Header.h";
 			};
 			name = Release;
 		};
