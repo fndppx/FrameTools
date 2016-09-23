@@ -13,6 +13,7 @@
 		3A0E6CCD1D5357B70044CDAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E6CCB1D5357B70044CDAE /* Main.storyboard */; };
 		3A0E6CCF1D5357B70044CDAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E6CCE1D5357B70044CDAE /* Assets.xcassets */; };
 		3A0E6CD21D5357B70044CDAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E6CD01D5357B70044CDAE /* LaunchScreen.storyboard */; };
+		3A12BBE31D950BDD00545AF8 /* VHStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A12BBE21D950BDD00545AF8 /* VHStoreManager.m */; };
 		3A17CB6C1D6BEBA300406A0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17CB6B1D6BEBA300406A0B /* main.m */; };
 		3A17CB6F1D6BEBA300406A0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17CB6E1D6BEBA300406A0B /* AppDelegate.m */; };
 		3A17CB771D6BEBA300406A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A17CB761D6BEBA300406A0B /* Assets.xcassets */; };
@@ -92,6 +93,8 @@
 		3A0E6CCE1D5357B70044CDAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0E6CD11D5357B70044CDAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0E6CD31D5357B70044CDAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A12BBE11D950BDD00545AF8 /* VHStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHStoreManager.h; sourceTree = "<group>"; };
+		3A12BBE21D950BDD00545AF8 /* VHStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHStoreManager.m; sourceTree = "<group>"; };
 		3A17CB681D6BEBA300406A0B /* TabBarFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A17CB6B1D6BEBA300406A0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A17CB6D1D6BEBA300406A0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -292,6 +295,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3A12BBE01D950BDD00545AF8 /* StoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A12BBE11D950BDD00545AF8 /* VHStoreManager.h */,
+				3A12BBE21D950BDD00545AF8 /* VHStoreManager.m */,
+			);
+			path = StoreManager;
+			sourceTree = "<group>";
+		};
 		3A17CB691D6BEBA300406A0B /* TabBarFrame */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +403,7 @@
 		3A17CB9A1D6C01D200406A0B /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				3A12BBE01D950BDD00545AF8 /* StoreManager */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -808,6 +821,7 @@
 				3A17CBDA1D6C24F500406A0B /* README.md in Sources */,
 				3A17CC531D6C584D00406A0B /* VHPullingRefreshTableView.m in Sources */,
 				3A17CBDC1D6C24F500406A0B /* AFImageDownloader.m in Sources */,
+				3A12BBE31D950BDD00545AF8 /* VHStoreManager.m in Sources */,
 				3A17CC111D6C534D00406A0B /* NSString+StringToWords.m in Sources */,
 				3A17CBE11D6C24F500406A0B /* UIProgressView+AFNetworking.m in Sources */,
 				3A17CC181D6C534D00406A0B /* UIImage+Resize.m in Sources */,
